@@ -1,6 +1,8 @@
 # action.yaml
 name: 'Change Metadata of Files'
-description: 'Change metadata of a file'
+description: 'Change specific metadata of PDF files through GitHub Action'
+author: Daniel Gadea
+
 inputs:
   file:
     description: 'File to update metadata'
@@ -22,3 +24,7 @@ runs:
     - ${{ inputs.file}}
     - ${{ inputs.title}}
     - ${{ inputs.author}}
+
+branding:
+  icon: 'file-text'
+  color: blue
