@@ -1,5 +1,5 @@
 # change-metadata-github-action
-This GitHub Action copies a file from the current repository to a location in another repository
+This GitHub Action allows changing the metadata of PDF files within the checked out repository.
 
 # Example Workflow
     - name: Change metadata of PDF file
@@ -16,7 +16,7 @@ This action uses https://exiftool.org/ to update metadata of files.
 Please take a look at the documentation of exiftool to see the available file types.
 
 # Variables
-This action currently supports three variables:
+This action is currently focused on PDF metadata & supports three variables:
 - file -> file to change (required)
-- title -> value to update tag "title" (optional)
-- author -> value to update tag "author" (optional) 
+- title -> value to update tag "title" (optional) -> if not provided will be updated to an empty string
+- author -> value to update tag "author" (optional) -> if not provided will be updated to an empty string
