@@ -7,11 +7,20 @@ jobs:
     runs-on: ubuntu-latest
     name: Changing metadata
     steps:
-    - name: checkout
+    - name: checkout # Checkout current repository
       uses: actions/checkout@master
-    - name: Change metadata of PDF file
+
+    - name: Change metadata of PDF file # Changes metadata of sample.pdf file
       uses: ./ # Uses an action in the root directory
       with:
         file: ./sample.pdf
         title: Sample Title
         author: John Doe
+
+    - name: Commit and push changes #Commits changes to this repository
+      run: |
+        git config --global user.name github-actions
+        git config --global user.email github-actions@github.com
+        git add -A
+        git commit -m "Automated changes to PDF metadata"
+        git push
