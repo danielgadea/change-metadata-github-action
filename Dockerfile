@@ -4,8 +4,7 @@ FROM alpine:latest
 # installes required packages for our script
 RUN	apk update && \
     apk upgrade && \
-    apk add libimage-exiftool-perl && \
-    apk add perl-doc
+    apk add exiftool
 
 
 # Copies your code file  repository to the filesystem
