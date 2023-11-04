@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Changing metadata
     steps:
+    - name: checkout
+      uses: actions/checkout@master
     - name: Change metadata of PDF file
       uses: ./ # Uses an action in the root directory
       with:
