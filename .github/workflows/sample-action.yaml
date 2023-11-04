@@ -1,6 +1,9 @@
 name: Change metadata of PDF
 
-on: [push]
+on:
+  push:
+    branches:
+      - action-test
 
 jobs:
   sample_action:
