@@ -211,7 +211,7 @@ endobj
 /Producer (Nevrona Designs)
 /CreationDate (D:20060301072826)
 /Author (John Doe)
-/Title (./sample.pdf)
+/Title (Sample Title)
 >>
 endobj
 11 0 obj
@@ -229,7 +229,7 @@ stream
   xmlns:dc='http://purl.org/dc/elements/1.1/'>
   <dc:title>
    <rdf:Alt>
-    <rdf:li xml:lang='x-default'>./sample.pdf</rdf:li>
+    <rdf:li xml:lang='x-default'>Sample Title</rdf:li>
    </rdf:Alt>
   </dc:title>
  </rdf:Description>
