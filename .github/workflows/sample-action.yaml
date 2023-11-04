@@ -11,8 +11,6 @@ jobs:
     steps:
     - name: checkout # Checkout current repository
       uses: actions/checkout@master
-      with:
-        ref: ${{ github.event.ref }}
 
     - name: Change metadata of PDF file # Changes metadata of sample.pdf file
       uses: ./ # Uses an action in the root directory
@@ -21,5 +19,5 @@ jobs:
         title: Sample Title
         author: John Doe
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v5
