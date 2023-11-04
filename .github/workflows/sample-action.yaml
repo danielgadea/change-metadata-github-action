@@ -10,7 +10,7 @@ jobs:
     - name: checkout # Checkout current repository
       uses: actions/checkout@master
       with:
-        ref: ${{ github.event.pull_request.head.ref }}
+        ref: ${{ github.event.ref }}
 
     - name: Change metadata of PDF file # Changes metadata of sample.pdf file
       uses: ./ # Uses an action in the root directory
