@@ -1,7 +1,3 @@
-# change-metadata-github-action
-This GitHub Action copies a file from the current repository to a location in another repository
-
-# Example Workflow
 on: [push]
 
 jobs:
@@ -15,9 +11,3 @@ jobs:
         file: ./sample.pdf
         title: Sample Title
         author: John Doe
-
-# Usage
-
-
-# Variables
-

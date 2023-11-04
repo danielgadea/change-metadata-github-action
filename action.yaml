@@ -1,0 +1,24 @@
+# action.yaml
+name: 'Change Metadata of Files'
+description: 'Change metadata of a file'
+inputs:
+  file:
+    description: 'File to update metadata'
+    required: true
+  title:
+    description: 'New title of the file'
+    required: false
+  author:
+    description: 'New author of the file'
+    required: false
+outputs:
+  status:
+    description: 'Status of the update'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.file}}
+    - ${{ inputs.title}}
+    - ${{ inputs.author}}
